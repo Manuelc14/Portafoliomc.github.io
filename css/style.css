@@ -20,6 +20,7 @@
     --bg-color2: #cbcbcb62;
     --shadow-color: rgba(0, 0, 0, 0.35);
     --dark-color: #cae610;
+    --bg-footer: #0b061f;
 }
 
 .dark-mode {
@@ -72,17 +73,6 @@ header {
     margin-right: auto;
 }
 
-.logo::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--bg-color);
-    animation: showRight 1s ease forwards;
-    animation-delay: 0.4s;
-}
 
 .navbar a {
     position: relative;
@@ -133,6 +123,20 @@ header {
     display: none;
 }
 
+
+#particles-js{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-footer);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
 /*ICON WHATSAPP */
 
 #btn-wsp {
@@ -171,6 +175,7 @@ section {
     font-weight: 700;
     line-height: 0.3;
     margin: 0.6rem;
+    color: var(--white-color);
 }
 
 .home-content h1::before {
@@ -180,7 +185,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: var(--bg-color);
+    background: var(--bg-footer);
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
     overflow: hidden;
@@ -190,6 +195,7 @@ section {
     font-size: 5.6rem;
     font-weight: 700;
     margin: 0.6rem;
+    color: var(--main-color);
 }
 
 .home-content .social-media {
@@ -289,6 +295,10 @@ section {
     border-color: var(--main-color);
 }
 
+
+.box__home{
+    background: var(--bg-footer);
+}
 .home .profession-container {
     position: absolute;
     top: 50%;
@@ -346,10 +356,10 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: var(--main-color);
+    color: var(--white-color);
     transform: rotate(calc(360deg / 4 * var(--i)));
     transform-origin: 384px;
-    background: var(--bg-color);
+    background: var(--bg-footer);
     padding: 13px 0;
 }
 
@@ -457,6 +467,152 @@ span {
     color: var(--main-color);
     animation: t1 3s ease infinite;
 }
+
+
+
+/* INICIA CARDS NOSOTROS*/
+.container__cards__nosotros{
+    width: 80%;
+    margin: auto;
+}
+
+.contenido__card{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 40rem), 1fr));
+    gap: 4rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__nosotros{
+    align-items: center;
+    width: 100%;
+    min-width: 28rem;
+    max-width: 45rem;
+    position: relative;
+    background: var(--bg-color);
+    border-radius: 8px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    box-shadow: 10px 10px 20px var(--shadow-color);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(5px);
+
+}
+.card__nosotros:hover{
+    transform: translateY(-10px);
+}
+.container__cards__nosotros .imagen__card__nosotros{
+    height: 140px;
+    width: 140px;
+    padding: 3px;
+    border-radius: 50%;
+    background: var(--bg-color);
+}
+.imagen__card__nosotros img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--bg-color);
+}
+
+.card__nosotros::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 45%;
+    width: 100%;
+    background: var(--main-color);
+    border-radius: 8px 8px 0 0;
+}
+.card__nosotros .card__contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.card__nosotros .media__icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.media__icons i{
+    font-size: 1.6rem;
+    color: var(--white-color);
+    opacity: 0.7;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.media__icons i:hover{
+    opacity: 1;
+}
+.card__nosotros .name__profesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+.name__profesion .name{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.name__profesion .profesion{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+
+}
+.card__nosotros .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.card__nosotros .rating i{
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 0 2px;
+}
+.card__nosotros .boton{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.card__nosotros .boton button{
+    background: var(--main-color);
+    outline: none;
+    border: none;
+    color: var(--white-color);
+    padding: 8px 22px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+.boton button:hover{
+    background-color: var(--bg-color);
+    border: 1px solid var(--main-color);
+    color: var(--text-color);
+}
+
+/*FINALIZA CARDS NOSOTROS*/
 
 @keyframes t1 {
     0% {
@@ -894,43 +1050,152 @@ span {
     margin-bottom: 3rem;
 }
 
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
+/* FORMULARIO */
+
+.container__form {
+    margin: auto;
+    width: 80%;
+    min-width: 20rem;
+    background: var(--bg-color);
+    padding: 20px;
+    margin-bottom: 2rem;
+    position: relative;
+    border: .1rem solid var(--main-color);
+    box-shadow: 1px 1px 30px -5px var(--shadow-color);
+    border-radius: .1rem;
+    border-radius:6px;
+}
+.container__form .title_form{
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 500;
     text-align: center;
-    margin-bottom: 0.3rem;
+    position: relative;
+}
+.title_form span{
+    color: var(--btn-color);
+}
+.container__form .form{
+    margin-top: 10px;
+}
+.form .input-box{
+    width: 100%;
+    margin-top: 10px;
+}
+.input-box label {
+    color: var(--main-color);
+    font-size: 1.6rem;
+}
+.form :where(.input-box input, .select-box){
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: 8px;
+    border: .1px solid var(--shadow-color);
+    border-radius: 6px;
+    padding:  0 15px;
+    background: var(--bg-color);
 }
 
-.contact form .input-box {
+.input-box input{
+    box-shadow:  0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
     display: flex;
-    justify-content: space-between;
+    column-gap: 10px;
+}
+.form .gender-box{
+    margin-top: 1.4rem;
+}
+.gender-box h3{
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.form :where(.gender-opcion, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
     flex-wrap: wrap;
 }
-
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    margin: 0.7rem 0;
-    box-shadow: 0 0.1rem 2rem var(--shadow-color);
-}
-
-.contact form .input-box input {
-    width: 49%;
-}
-
-.contact form textarea {
-    resize: none;
-}
-
-.contact form .btn {
-    margin-top: 2rem;
+.form .gender{
+    column-gap: 5px;
     cursor: pointer;
 }
+.gender input {
+    accent-color: var(--main-color);
+}
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+    color: var(--text-color);
+}
+.gender label{
+    color: var(--text-color);
+}
+.addres :where(input, .select-box) {
+    margin-top: 10px;
+}
 
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    background: var(--bg-color);
+}
+
+.form button{
+    height: 40px;
+    width: 50%;
+    margin-left: 25%;
+    color: var(--bg-footer);
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius:6px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    background: var(--main-color);
+}
+.form button:hover{
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 2px solid var(--white-color);
+
+}
+.iconoform{
+    position: relative;
+    font-size: 2rem;
+    padding: .5rem;
+    color: var(--main-color);
+    z-index: 2;
+}
+
+
+#cuentanos{
+    background: var(--bg-color);
+    align-items: center;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: 8px;
+    border: .1px solid var(--shadow-color);
+    border-radius: 6px;
+    padding:  10px 15px;
+    box-shadow:  0 1px 0 rgba(0, 0, 0, 0.1);
+    resize: none;
+
+}
 /* Redes */
 .redes {
     display: flex;
@@ -999,6 +1264,7 @@ span {
     flex-wrap: wrap;
     padding: 2rem 7%;
     background: var(--main-color);
+    box-shadow: 1rem 2rem 10rem var(--shadow-color);
 }
 
 .footer-text p {

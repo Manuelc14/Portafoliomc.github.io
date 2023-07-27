@@ -234,6 +234,27 @@
   }
   
 }
+@media screen and (max-width: 590px){
+  
+  .home-img{
+    bottom: 1rem;
+    left: 25%;
+  }
+  .home-img img {
+    display: block;
+    width: 50vw;
+  }
+  #darkMode-icon{
+    padding: 0;
+  }
+  .home .profession-container .overlay {
+    margin-top: 45%;
+  }
+  .container__form {
+    width: 100%;
+  }
+
+}
 @media screen and (max-width: 450px) {
   html {
     font-size: 50%;
@@ -267,14 +288,21 @@
   }
   .home-img{
     bottom: 0;
-    left: 6rem;
+    left: 25%;
   }
   .home-img img {
     display: block;
-    width: 35rem;
+    width: 50vw;
   }
 }
-
+@media screen and (max-width: 400px){
+  .form .column {
+    flex-direction: column;
+  }
+  .enunciado_software::before{
+    height: 55%;
+  }
+}
 @media screen and (max-width: 365px) {
   .home .profession-container .overlay {
     margin-top: 15%;
