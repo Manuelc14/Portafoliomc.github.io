@@ -19,6 +19,7 @@
     --white-color: #fdfdfd;
     --bg-color2: #cbcbcb62;
     --shadow-color: rgba(0, 0, 0, 0.35);
+    --dark-color: #cae610;
 }
 
 .dark-mode {
@@ -115,6 +116,7 @@ header {
 }
 
 #darkMode-icon {
+    padding: 0 1rem;
     font-size: 2.4rem;
     color: var(--white-color);
     cursor: pointer;
