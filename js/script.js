@@ -62,7 +62,7 @@ var swiper = new Swiper(".mySwiper", {
 let darkModeIcon = document.querySelector('#darkMode-icon');
 
 darkModeIcon.onclick = () => {
-    darkModeIcon.classList.toggle('bx-sun');
+    darkModeIcon.classList.toggle('bxs-sun');
     document.body.classList.toggle('dark-mode');
 }
 

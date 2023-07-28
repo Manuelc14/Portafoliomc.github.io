@@ -74,13 +74,14 @@
 @media screen and (max-width: 768px) {
   #menu-icon {
     display: block;
+    color: var(--main-color);
   }
 
   #darkMode-icon {
     position: absolute;
     right: 7rem;
     font-size: 2.6rem;
-    color: var(--text-color);
+    color: var(--dark-color);
     margin-bottom: 0.1rem;
   }
   #btn-wsp {
@@ -222,6 +223,10 @@
   }
   .home .profession-container .overlay {
     margin-top: 30%;
+  }
+
+  .menuhome{
+    color: white;
   }
 }
 

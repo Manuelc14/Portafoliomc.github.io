@@ -33,13 +33,13 @@
 
 
 
-        <div class='bx bx-moon' id="darkMode-icon"></div>
+        <div class='bx bxs-moon' id="darkMode-icon"></div>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="bx bx-menu " id="menu-icon"></div>
     </header>
     <!-- home setion desing -->
     <section class="home" id="home">
-        
+
         <div id="particles-js"> </div>
         <div class="home-content">
             <h3>Hello, I am</h3>
@@ -53,7 +53,7 @@
                 <a href="https://www.instagram.com/manuelcausil14/" target="_blank"><i class='bx bxl-instagram'></i></a>
                 <a href="https://www.linkedin.com/in/manuel-causil-a48454267/" target="_blank"><i
                         class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="https://github.com/Manuelc14" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
 
             <div class="btn-box box__home">
@@ -93,7 +93,7 @@
 
         <div class="container__cards__nosotros">
             <div class="contenido__card">
-                
+
                 <div class="card__nosotros">
                     <div class="card__contenido">
                         <div class="imagen__card__nosotros">
@@ -101,10 +101,14 @@
                         </div>
 
                         <div class="media__icons">
-                            <a href="https://github.com/Manuelc14" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/manuel-causil-a48454267/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://www.facebook.com/MANUEL105/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/manuelcausil14/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/Manuelc14" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/manuel-causil-a48454267/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/MANUEL105/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/manuelcausil14/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
                         </div>
 
                         <div class="name__profesion">
@@ -300,6 +304,15 @@
 
         <div class="portfolio-container">
             <div class="portfolio-box">
+                <img src="./images/domotik.png" alt="imgprojec">
+                <div class="portfolio-layer">
+                    <h4>Web Site</h4>
+                    <p>IQHome
+                    </p>
+                    <a href="https://domotik.netbox.com.co/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
                 <img src="./images/dizcar1.png" alt="imgprojec">
                 <div class="portfolio-layer">
                     <h4>Web Site</h4>
@@ -329,7 +342,8 @@
                             class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <div class="portfolio-box">
+
+            <!-- <div class="portfolio-box">
                 <img src="./images/dizcar2.png"imgprojec">
                 <div class="portfolio-layer">
                     <h4>Web Site</h4>
@@ -348,17 +362,8 @@
                     <a href="http://nittgt.000webhostapp.com/contact_us.html" target="_blank"><i
                             class='bx bx-link-external'></i></a>
                 </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="./images/domotik.png" alt="imgprojec">
-                <div class="portfolio-layer">
-                    <h4>Web Site</h4>
-                    <p>IQHome
-                    </p>
-                    <a href="https://domotik.netbox.com.co/" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-            </div>
+            </div> -->
+
         </div>
     </section>
 
@@ -413,7 +418,7 @@
         <h2 class="heading">Contact <span>Me!</span> </h2>
 
         <div class="container__form">
-            <form  id="form" action="correos.php" method="POST" class="form">
+            <form id="form" action="correos.php" method="POST" class="form">
                 <!-- <div class="title_form">¡Inscribase <span>GRATIS !</span></div> -->
 
                 <div class="column">
@@ -456,16 +461,21 @@
                 <textarea id="cuentanos" name="cuentanos" cols="30" rows="5" placeholder="Your Menssage"></textarea>
 
                 <button>Send Message</button>
+                <div class="elemento_btn_enviar">
+                    <input type="submit" value="Enviar" />
+                </div>
             </form>
         </div>
-    </div>
+        </div>
     </section>
     <div class="redes">
         <div class="social-media">
             <a href="https://github.com/Manuelc14" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/manuel-causil-a48454267/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/manuel-causil-a48454267/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.facebook.com/MANUEL105/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/manuelcausil14/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/manuelcausil14/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
 
@@ -493,122 +503,122 @@
     <!-- particles js -->
     <script src="./js/particles.min.js"></script>
 
-    
+
     <script>
         particlesJS({
-                "particles": {
-                    "number": {
-                        "value": 80,
-                        "density": {
-                            "enable": true,
-                            "value_area": 800
-                        }
-                    },
-                    "color": {
-                        "value": "#ffffff"
-                    },
-                    "shape": {
-                        "type": "circle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        },
-                        "polygon": {
-                            "nb_sides": 5
-                        },
-                        "image": {
-                            "src": "img/github.svg",
-                            "width": 100,
-                            "height": 100
-                        }
-                    },
-                    "opacity": {
-                        "value": 0.5277888844462217,
-                        "random": false,
-                        "anim": {
-                            "enable": true,
-                            "speed": 1,
-                            "opacity_min": 0.1116756937852476,
-                            "sync": false
-                        }
-                    },
-                    "size": {
-                        "value": 4,
-                        "random": true,
-                        "anim": {
-                            "enable": false,
-                            "speed": 40,
-                            "size_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "line_linked": {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
                         "enable": true,
-                        "distance": 150,
-                        "color": "#ffffff",
-                        "opacity": 0.4,
-                        "width": 1
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": 5,
-                        "direction": "none",
-                        "random": false,
-                        "straight": false,
-                        "out_mode": "out",
-                        "bounce": false,
-                        "attract": {
-                            "enable": true,
-                            "rotateX": 600,
-                            "rotateY": 1200
-                        }
+                        "value_area": 800
                     }
                 },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": {
-                        "onhover": {
-                            "enable": true,
-                            "mode": "repulse"
-                        },
-                        "onclick": {
-                            "enable": true,
-                            "mode": "push"
-                        },
-                        "resize": true
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
                     },
-                    "modes": {
-                        "grab": {
-                            "distance": 400,
-                            "line_linked": {
-                                "opacity": 1
-                            }
-                        },
-                        "bubble": {
-                            "distance": 400,
-                            "size": 40,
-                            "duration": 2,
-                            "opacity": 8,
-                            "speed": 3
-                        },
-                        "repulse": {
-                            "distance": 200,
-                            "duration": 0.4
-                        },
-                        "push": {
-                            "particles_nb": 4
-                        },
-                        "remove": {
-                            "particles_nb": 2
-                        }
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
                     }
                 },
-                "retina_detect": true
-            }
+                "opacity": {
+                    "value": 0.5277888844462217,
+                    "random": false,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0.1116756937852476,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 4,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 5,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": true,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        }
 
         )
     </script>
-    
+
     <script src="https://kit.fontawesome.com/769ad731fe.js" crossorigin="anonymous"></script>
 
 
